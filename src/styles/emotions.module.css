@@ -1,0 +1,64 @@
+.emotions{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    margin-top: 6rem;
+    font-size: 1rem;
+    gap: 0rem;
+  }
+  .emotions .gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem;
+  }
+  .emotions h2{
+    font-size: 3rem;
+  }
+  .emotions .cards{
+    margin-top: 0rem;
+    gap: 1rem;
+    flex-wrap: none;
+    overflow-x: scroll;
+    display: flex;
+    padding: 1rem;
+    scroll-behavior: smooth;
+  }
+  .emotions .cards::-webkit-scrollbar{
+    display: none;
+  }
+  .emotions .card{
+    height: 11rem;
+    width: 18rem;
+    background-color: #d4b6ef;
+    padding: .8rem;
+    border-radius: .5rem;
+    flex: none;
+    opacity: 1;
+  }
+  
+  .emotions .card img{
+    height: 2rem;
+  }
+  .emotions .card h3{
+    margin-bottom: .5rem;
+  }
+  .emotions .backbtn img, .emotions .frontbtn img{
+    height: 2.5rem;
+  }
+  .emotions .backbtn img:hover, .emotions .frontbtn img:hover{
+    cursor: pointer;
+  }
+
+  .icon1{
+    height: 4rem;
+  }
+  .emotions_title{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+  }
+  .cardIcon {
+    font-size: 2em; 
+}

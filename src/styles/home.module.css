@@ -76,24 +76,24 @@
     align-items: center;
     justify-content: center;
     height: 40vw;
-    width: 40vw; /* Ensuring it's a perfect circle */
-    border-radius: 80%; /* Making it a circle */
+    width: 40vw; 
+    border-radius: 80%;
     border: dashed 4px white; 
 }
 .circle{
-    position: relative; /* Ensure positioning context */
+    position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30vw;
   width: 30vw; 
-  border-radius: 50%; /* Making it a circle */
+  border-radius: 50%; 
   background-color: #E2DBFC; 
 }
 .phone_img{
-    position: absolute; /* Position image relative to parent */
-    top: 50%; /* Position image in the middle vertically */
-    left: 43%; /* Position image in the middle horizontally */
-    transform: translate(-50%, -50%); /* Center the image */
+    position: absolute; 
+    top: 50%; 
+    left: 43%; 
+    transform: translate(-50%, -50%); 
     z-index: 1; 
 }
