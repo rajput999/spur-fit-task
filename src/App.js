@@ -3,6 +3,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Emotions from './components/Emotions';
 import Section5 from './components/Section5';
+import Section6 from './components/Section6';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Eqbeats/>
       <Emotions/>
       <Section5 />
+      <Section6 />
     </div>
   );
 }
