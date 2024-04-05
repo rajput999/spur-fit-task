@@ -1,0 +1,65 @@
+.fullPage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.full{
+    height: 80%;
+    width: 90%;
+    background-color: #fff0e4;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    height: 25%;
+    padding: 10% 0 0 4%;
+}
+
+.mainTitle{
+    margin-top: 1rem;
+    font-size: 3.7rem;
+    font-weight: 500;
+}
+
+.lowerSection{
+    display: flex;
+
+}
+
+.lowerLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.graycircle{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 100%;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whitecircle{
+    height: 13vw;
+    width: 13vw;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img2{
+    height: 8vw;
+}
+
+.lowerRight{
+    font-weight: 200;
+    padding: 4rem 7rem 0 0 ;
+    font-size: 1.5rem;
+    width: 50%;
+}
