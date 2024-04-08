@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import styles from '../styles/section9.module.css';
 
 const Section9 = () => {
-    // const teamAheadRef = useRef(null);
+    const teamAheadRef = useRef(null);
 
     useEffect(() => {
         // const teamAheadText = teamAheadRef.current;
