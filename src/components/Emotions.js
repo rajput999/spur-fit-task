@@ -33,14 +33,14 @@ const Emotions = () => {
                 trigger: "#dtsf",
                 start: "0 80%",
                 end: "0px 80%",
-                toggleActions: "restart none reset reverse"
+                toggleActions: "restart none none none"
             }
         });
         
         t1.fromTo(
             "#dtsf", 
             { x: -1000, scale: 0, opacity: 0 }, 
-            { x: 0, scale: 1, opacity: 1, duration: 0.6 } 
+            { x: 0, scale: 1, opacity: 1, duration: 1.5 } 
         );
         
         

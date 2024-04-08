@@ -22,27 +22,36 @@ const Home = () => {
     var t1 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 80%",
+        start: "0 90%",
         end: "0px 80%",
-        toggleActions: "restart none reset reverse",
+        toggleActions: "restart none none none",
       },
     });
 
     var t2 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
-        start: "0 80%",
+        start: "0 90%",
         end: "0px 80%",
-        toggleActions: "restart none reset reverse",
+        toggleActions: "restart none none none",
       },
     });
 
     var t3 = gsap.timeline({
       scrollTrigger: {
         trigger: `#icon1`,
+        start: "0 90%",
+        end: "0px 80%",
+        toggleActions: "restart none none none",
+      },
+    });
+
+    var t4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: `#icon1`,
         start: "0 80%",
         end: "0px 80%",
-        toggleActions: "restart none reset reverse",
+        toggleActions: "restart none none none",
       },
     });
 
@@ -70,10 +79,10 @@ const Home = () => {
       { rotation: 45, transformOrigin: `25vw -13vw` , x:'-300%', y:'210%'},
       { rotation: 0, ease: "linear", duration: 0.5 }
     );
-    gsap.fromTo(
+    t4.fromTo(
       [icon5Element],
       { rotation: 60 }, 
-      { rotation: 300, ease: "linear", duration: 0.6, onComplete: () => gsap.killTweensOf(icon5Element) } 
+      { rotation: 300, ease: "linear", duration: 1, } 
     );
   }, []);
   

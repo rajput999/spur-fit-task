@@ -6,6 +6,7 @@
     justify-content: center;
 }
 .full{
+    position: relative;
     height: 80%;
     width: 90%;
     background-color: #fff0e4;
@@ -13,6 +14,32 @@
     display: flex;
     flex-direction: column;
 }
+.icon7{
+    position: absolute;
+    top:-2.7rem;
+    left: 75rem;
+    height: 5.6rem;
+    width: 4srem;
+}
+.icon5{
+    position: absolute;
+    top: 28vw;
+    left: 32vw;
+    height: 1.3rem;
+}
+.icon5_2{
+    position: absolute;
+     top: -12vw; 
+     left: 27vw; 
+    height: 1.3rem;
+}
+.icon6{
+    position: absolute;
+    top: 32vw;
+    left: 30vw;
+    height: 3rem;
+}
+
 .title{
     height: 25%;
     padding: 10% 0 0 4%;
@@ -34,6 +61,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 .graycircle{
     height: 15vw;
@@ -53,11 +81,17 @@
     align-items: center;
     justify-content: center;
 }
+.icon8{
+    position: absolute;
+    height: 4vw;
+    top: -1.3vw;
+}
 .img2{
     height: 8vw;
 }
 
 .lowerRight{
+    position: relative;
     font-weight: 200;
     padding: 4rem 7rem 0 0 ;
     font-size: 1.5rem;
