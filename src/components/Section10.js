@@ -15,7 +15,7 @@ const Section10 = () => {
                 trigger: `#sectionTitle`,
                 start: "top 70%", // Adjusted start position
                 end: "bottom 70%", // Adjusted end position
-                toggleActions: "restart none reset reverse",
+                toggleActions: "restart none none none",
             },
         })
         .fromTo(
@@ -25,9 +25,8 @@ const Section10 = () => {
         )
         .fromTo(
             `#companyName`,
-            { x: 200, opacity: 0 },
+            { x: 80, opacity: 0 },
             { x: 0, opacity: .8, duration: 0.6 },
-            "-=0.6" // Delays the animation of companyName to start after sectionTitle
         );
 
         gsap.timeline({
