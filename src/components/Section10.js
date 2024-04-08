@@ -1,57 +1,47 @@
 import React, { useEffect } from 'react';
 import styles from "../styles/section10.module.css";
 import happyblob from "../images/happyblob.png";
-import cardListData from '../data/workWithUs.json'
+import cardListData from '../data/workWithUs.json';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Section10 = () => {
+    console.log("hey");
 
     useEffect(() => {
-        const box = document.querySelector(`.${styles.sectionTitle}`);
-
-        console.log(`.${styles.sec10Title}`)
-        var t1 = gsap.timeline({
+        gsap.timeline({
             scrollTrigger: {
-                trigger: `#companyName`,
-                start: "0 70%",
-                end: "0px 70%",
+                trigger: `#sectionTitle`,
+                start: "top 70%", // Adjusted start position
+                end: "bottom 70%", // Adjusted end position
                 toggleActions: "restart none reset reverse",
             },
-        });
-        t1.fromTo(
-            `#companyName`,
-            { x: +200, opacity: 0 },
-            { x: -40, opacity: .8, duration: 0.6 }
-        );
-        t1.to(`#companyName`, { x: 0, duration: 0.3, opacity: 1 });
-        var t2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: `#companyName`,
-                start: "0 70%",
-                end: "0px 70%",
-                toggleActions: "restart none reset reverse",
-            },
-        });
-        t2.fromTo(
-            ` #sectionTitle`,
+        })
+        .fromTo(
+            `#sectionTitle`,
             { x: -200, opacity: 0 },
-            { x: +40, opacity: .8, duration: 0.6 }
+            { x: 0, opacity: .8, duration: 0.6 }
+        )
+        .fromTo(
+            `#companyName`,
+            { x: 200, opacity: 0 },
+            { x: 0, opacity: .8, duration: 0.6 },
+            "-=0.6" // Delays the animation of companyName to start after sectionTitle
         );
-        t2.to(`#sectionTitle`, { x: 0, duration: 0.3, opacity: 1 });
-        var t3 = gsap.timeline({
+
+        gsap.timeline({
             scrollTrigger: {
                 trigger: `#sec10Content img`,
-                start: "0 90%",
-                end: "0px 90%",
+                start: "top 90%", // Adjusted start position
+                end: "bottom 90%", // Adjusted end position
                 toggleActions: "restart none reset reverse",
             },
-        });
-        t3.fromTo(
+        })
+        .fromTo(
             `#sec10Content img`,
             { rotateZ: 30, scale: .9, transformOrigin: "50% 20%" },
-            { rotateZ: -30, scale: 1.2, duration: 0.6, repeat: -1, yoyo: "true", }
+            { rotateZ: -30, scale: 1.2, duration: 0.6, repeat: -1, yoyo: true }
         );
     }, []);
 
