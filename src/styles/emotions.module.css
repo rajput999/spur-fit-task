@@ -6,12 +6,12 @@
     font-size: 1rem;
     gap: 0rem;
   }
-  .emotions .gallery{
+.gallery{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding: 0rem;
+    margin-top: 2rem;
   }
   .emotions h2{
     font-size: 3rem;
@@ -38,18 +38,10 @@
     opacity: 1;
   }
   
-  .emotions .card img{
-    height: 2rem;
-  }
-  .emotions .card h3{
-    margin-bottom: .5rem;
-  }
   .emotions .backbtn img, .emotions .frontbtn img{
     height: 2.5rem;
   }
-  .emotions .backbtn img:hover, .emotions .frontbtn img:hover{
-    cursor: pointer;
-  }
+
 
   .icon1{
     height: 4rem;

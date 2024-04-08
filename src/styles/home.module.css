@@ -13,7 +13,7 @@
     height: 90%;
     border-radius: 40px;
     display: flex;
-
+    overflow-y: hidden;
 }
 .innerContainer{
     display: flex;
@@ -41,7 +41,6 @@
     justify-content: center;
     background-color: black;
     border-radius: 10px;
-    /* height: 3rem; */
 }
 .appStoreButtonText{
     margin-left: 1rem;
@@ -97,3 +96,48 @@
     transform: translate(-50%, -50%); 
     z-index: 1; 
 }
+
+.icon3 {
+    position: absolute;
+    height: 5vw;
+    transform:  rotate(-25deg);
+    z-index: 2; 
+  }
+  .icon1 {
+    position: absolute;
+    height: 4.3vw;
+    transform: rotate(25deg);
+    z-index: 2; 
+  }
+  .icon4 {
+    position: absolute;
+    height: 6vw;
+    z-index: 2; 
+  }
+  
+.icon5 {
+    z-index: 3; 
+    height: 3rem;
+    margin-top: -1rem;
+  }
+  
+  .icon5Wrapper {
+    position: absolute;
+    top: 5%;
+    left: 15%;
+    z-index: 3; 
+    overflow: hidden; 
+    width: 20rem;
+    height: 8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .icon6 {
+    position: absolute; 
+    top: 19vh;
+    left: 32vw;
+    z-index: 3; 
+    height: 3rem;
+  }
