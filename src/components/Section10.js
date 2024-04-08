@@ -25,7 +25,7 @@ const Section10 = () => {
         )
         .fromTo(
             `#companyName`,
-            { x: 80, opacity: 0 },
+            { x: 50, opacity: 0 },
             { x: 0, opacity: .8, duration: 0.6 },
         );
 
