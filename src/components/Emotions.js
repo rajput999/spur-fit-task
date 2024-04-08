@@ -10,7 +10,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Emotions = () => {
-    const [cards, setCards] = useState(dtsfData);
     const bcolor = ['#EEEBFD','#FEEFD5','#D8F2FE','#FDF1EE','#FEF7F1'];
     const cardsDivRef = useRef(null);
 
@@ -69,7 +68,7 @@ const Emotions = () => {
             <div className={styles.gallery}>
                 <div className={styles.backbtn} onClick={leftHandleClick}><img src={left_arrow} alt="" /></div>
                 <div className={styles.cards} ref={cardsDivRef}>
-                    {cards.map((card, index) => (
+                    {dtsfData.map((card, index) => (
                         <div className={styles.card} key={index} style={{backgroundColor:bcolor[index%bcolor.length]}}>
                             <span className={styles.cardIcon} role="img" aria-label="emoji">{card.icon}</span>
                             <h3>{card.title}</h3>

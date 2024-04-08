@@ -37,8 +37,6 @@ export default function Section8() {
     );
     t2.to(`.${styles.section8Title}`, { x: 0, duration: 0.3 });
 
-    const pathItems = document.querySelectorAll(`#path-item`);
-
     var t3 = gsap.timeline({
       scrollTrigger: {
         trigger: `.${styles.section8Title}`,
