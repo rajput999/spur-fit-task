@@ -26,6 +26,25 @@ const Emotions = () => {
             },
             ease: "power3.inOut",
         });
+
+
+        var t1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#dtsf",
+                start: "0 80%",
+                end: "0px 80%",
+                toggleActions: "restart none reset reverse"
+            }
+        });
+        
+        t1.fromTo(
+            "#dtsf", 
+            { x: -1000, scale: 0, opacity: 0 }, 
+            { x: 0, scale: 1, opacity: 1, duration: 0.6 } 
+        );
+        
+        
+
     }, []);
 
     const leftHandleClick = (evt) => {
@@ -46,7 +65,7 @@ const Emotions = () => {
     
     return (
         <div className={styles.emotions}>
-            <h2 className={styles.emotions_title}>Does this sound familiar... <img className={styles.icon1} src={icon1} alt="" id='eicon1'/></h2>
+            <h2 className={styles.emotions_title} id='dtsf'>Does this sound familiar... <img className={styles.icon1} src={icon1} alt="" id='eicon1'/></h2>
             <div className={styles.gallery}>
                 <div className={styles.backbtn} onClick={leftHandleClick}><img src={left_arrow} alt="" /></div>
                 <div className={styles.cards} ref={cardsDivRef}>
