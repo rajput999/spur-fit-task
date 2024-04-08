@@ -9,7 +9,7 @@ export default function Section8() {
   useEffect(() => {
     var t1 = gsap.timeline({
       scrollTrigger: {
-        trigger: `.${styles.section8Subtitle}`,
+        trigger: `.${styles.section8Title}`,
         start: "0 80%",
         end: "0px 80%",
         toggleActions: "restart none reset reverse",
@@ -41,33 +41,33 @@ export default function Section8() {
 
     var t3 = gsap.timeline({
       scrollTrigger: {
-        trigger: `.${styles.pathItem}`,
+        trigger: `.${styles.section8Title}`,
         start: "0 80%",
         end: "0px 80%",
-        toggleActions: "restart none reverse reverse",
+        toggleActions: "restart none none none",
       },
     });
-    pathItems.forEach((item) => {
-      t3.fromTo(
-        item,
-        { rotateZ: 180, opacity: 0 },
-        { rotateZ: -20, opacity: 1, duration: 0.5 }
-      );
-      t3.to(item, { rotateZ: 0, duration: 0.2 });
-    });
+    
+    t3.fromTo(
+      "#path-item", 
+      { x: 200, scale: 0, opacity: 0 }, 
+      { x: 0, scale: 1, opacity: 1, duration: 1.5 } 
+    );
+
 
     var t4 = gsap.timeline({
       scrollTrigger: {
-        trigger: `.${styles.container}`,
+        trigger: `.${styles.section8Title}`,
         start: "0 80%",
         end: "0px 80%",
         toggleActions: "restart none reset reverse",
       },
+      
     });
     t4.fromTo(
       `.${styles.container}`,
-      { opacity: 0, y: 50, scale: 1 },
-      { opacity: 1, duration: 0.4, y: -10, scale: 1 }
+      { opacity: 0,  scale: 0.8 },
+      { opacity: 1, duration: 1.3, scale: 1 }
     );
     t4.to(`.${styles.container}`, { duration: 0.3, scale: 1, y: 0 });
   }, []); 
