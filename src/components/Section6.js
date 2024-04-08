@@ -8,19 +8,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Section6= ()=> {
     useEffect(()=>{
-        var t1 = gsap.timeline({scrollTrigger:{trigger: `.${styles.timelineSection} h5`, start:"0 80%",end: "0px 80%", toggleActions: "restart none reset reverse"}});
-        t1.fromTo(`.${styles.timelineSection} h5, .${styles.timelineSection} h2`, {x: -200, opacity:0}, {x:40, opacity: 1, duration: .6, });
-        t1.to(`.${styles.timelineSection} h5, .${styles.timelineSection} h2`, {x:0, duration: .3});
+        var t1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#title",
+                start: "0 80%",
+                end: "0px 80%",
+                toggleActions: "restart none none none"
+            }
+        });
+        
+        t1.fromTo(
+            "#title", 
+            { x: -1000, scale: 0, opacity: 0 }, 
+            { x: 0, scale: 1, opacity: 1, duration: 1.5 } 
+        );
     
     }, []);
 
     return (
         <div className={styles.full}>
         <div className={styles.timelineSection}>
+            <div id='title'>
             <div className={styles.subTitle}>Wrong with self-improvement & how we're fixing it.</div>
             <div className={styles.mainTitle}>
                 Self-improvement. Ugh.
                 <img className={styles.icon3} src={icon3} alt="" />
+            </div>
             </div>
             <div className={styles.timeline}>
                 <div className={styles.timelineContent}>
