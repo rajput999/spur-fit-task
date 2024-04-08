@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef} from 'react';
 import dtsfData from '../data/dtsfData.json';
 import left_arrow from "../images/left-arrow.png";
 import right_arrow from "../images/right-arrow.png";
