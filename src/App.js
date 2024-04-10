@@ -11,7 +11,7 @@ import Section10 from './components/Section10';
 import Section11 from './components/Section11';
 import Section12 from './components/Section12';
 
-function App() {
+function App({isAdmin}) {
   return (
     <div className="App">
       <Navbar />
@@ -24,7 +24,7 @@ function App() {
       <Section8 />
       <Section9 />
       <Section10/>
-      <Section11/>
+      <Section11 isAdmin={isAdmin}/>
       <Section12/>
     </div>
   );

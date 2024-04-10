@@ -6,46 +6,46 @@ const Section9 = () => {
     const teamAheadRef = useRef(null);
 
     useEffect(() => {
-        // const teamAheadText = teamAheadRef.current;
+        const teamAheadText = teamAheadRef.current;
 
-        // var t1 = gsap.timeline({
-        //   scrollTrigger: {
-        //     trigger: `.${styles.sign_P}`,
-        //     start: "0 98%",
-        //     end: "0px 80%",
-        //     toggleActions: "restart none none none",
-        //   },
-        // });
+        var t1 = gsap.timeline({
+          scrollTrigger: {
+            trigger: `.${styles.sign_P}`,
+            start: "0 98%",
+            end: "0px 80%",
+            toggleActions: "restart none none none",
+          },
+        });
 
-        // t1.fromTo(
-        //     teamAheadText,
-        //     {
-        //         opacity: 1,
-        //         scaleX: 1,
-        //         scaleY: 1
-        //     },
-        //     {
-        //         opacity: 1,
-        //         scaleX: 1,
-        //         scaleY: 1,
-        //         duration: 1,
-        //         delay: 0.5,
-        //         ease: 'power4.out',
-        //         onComplete: () => {
-        //             teamAheadText.textContent="";
-        //             const text = "Team ahead";
-        //             let index = 0;
-        //             const interval = setInterval(() => {
-        //                 if (index < text.length) {
-        //                     teamAheadText.textContent += text[index];
-        //                     index++;
-        //                 } else {
-        //                     clearInterval(interval);
-        //                 }
-        //             }, 200);
-        //         }
-        //     }
-        // );
+        t1.fromTo(
+            teamAheadText,
+            {
+                opacity: 1,
+                scaleX: 1,
+                scaleY: 1
+            },
+            {
+                opacity: 1,
+                scaleX: 1,
+                scaleY: 1,
+                duration: 1,
+                delay: 0.5,
+                ease: 'power4.out',
+                onComplete: () => {
+                    teamAheadText.textContent="";
+                    const text = "Team ahead";
+                    let index = 0;
+                    const interval = setInterval(() => {
+                        if (index < text.length) {
+                            teamAheadText.textContent += text[index];
+                            index++;
+                        } else {
+                            clearInterval(interval);
+                        }
+                    }, 200);
+                }
+            }
+        );
 
 
         var t2 = gsap.timeline({

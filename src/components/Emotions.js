@@ -63,7 +63,7 @@ const Emotions = () => {
     }
     
     return (
-        <div className={styles.emotions}>
+        <div className={styles.emotions} id='Emotions'>
             <h2 className={styles.emotions_title} id='dtsf'>Does this sound familiar... <img className={styles.icon1} src={icon1} alt="" id='eicon1'/></h2>
             <div className={styles.gallery}>
                 <div className={styles.backbtn} onClick={leftHandleClick}><img src={left_arrow} alt="" /></div>
